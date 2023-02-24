@@ -16,7 +16,7 @@ my_catalog = my_cur.fetchall()
 catalog_df = pd.DataFrame(my_catalog)
 
 # temp write the catalog_df to the page so I can see what I'm working with
-streamlit.write(catalog_df)
+# streamlit.write(catalog_df)
 
 # save first column into a list
 color_list = catalog_df[0].values.tolist()
